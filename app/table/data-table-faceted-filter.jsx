@@ -1,11 +1,10 @@
 import * as React from "react";
 import { CheckIcon, PlusCircledIcon } from "@radix-ui/react-icons";
 import { Column } from "@tanstack/react-table";
-
 import { cn } from "@/lib/utils";
-import { Badge } from "@/registry/new-york/ui/badge";
-import { Button } from "@/registry/new-york/ui/button";
 import {
+  Badge,
+  Button,
   Command,
   CommandEmpty,
   CommandGroup,
@@ -13,9 +12,11 @@ import {
   CommandItem,
   CommandList,
   CommandSeparator,
-} from "@/registry/new-york/ui/command";
-import { Popover, PopoverContent, PopoverTrigger } from "@/registry/new-york/ui/popover";
-import { Separator } from "@/registry/new-york/ui/separator";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  Separator,
+} from "@/components/index";
 
 export function DataTableFacetedFilter({ column, title, options }) {
   const facets = column?.getFacetedUniqueValues();

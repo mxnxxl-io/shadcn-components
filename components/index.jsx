@@ -1,1 +1,1 @@
-export * as "./ui/index"
+export * from "./ui/index";

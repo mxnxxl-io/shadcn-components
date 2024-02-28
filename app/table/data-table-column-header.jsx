@@ -9,7 +9,16 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/registry/new-york/ui/dropdown-menu";
+} from "@/registry/new-york/ui/dropdown-menu"; //combine these imports from components/index
+
+import {
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/index";
 
 export function DataTableColumnHeader({ column, title, className }) {
   if (!column.getCanSort()) {
